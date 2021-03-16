@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>心理測驗
+    </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">心理測驗</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"></a><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">最新消息</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">其他測驗</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">星座測驗</a>
+                        <a class="dropdown-item" href="#">血型測驗</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">會員專區</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">會員福利</a>
+                        <a class="dropdown-item" href="#">基本資料</a>
+                        <a class="dropdown-item" href="#">登出</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <h1 class="display-3">心理測驗2021</h1>
+    </div>
+    <div class="m-5">
+        <form action="check.php" method="POST">
+            <div class="m-5">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead class="table-info text-center">
+                        <tr>
+                            <th>測驗題號</th>
+                            <th>問題</th>
+                            <th>選項</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--表格的內容-->
+                        <tr>
+                            <th scope="row" class="text-center">01</th>
+                            <td>和初次結識的朋友面前我是？</td>
+                            <td>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="01" id="" value="a" checked>
+                                        通常我先說話
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="01" id="" value="b" checked>
+                                        通常對方先說話
+                                    </label>
+                                </div>                                                                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center table-danger">02</th>
+                            <td class="table-danger">週末我會？</td>
+                            <td class="table-danger">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="02" id="" value="a" checked>
+                                        不介意獨自度過
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="02" id="" value="b" checked>
+                                        喜歡和其他人見面
+                                    </label>
+                                </div>                                                                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center">03</th>
+                            <td>和朋友出去時我會？</td>
+                            <td>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="03" id="" value="a" checked>
+                                        喜歡熱鬧喧嘩的氣氛
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="03" id="" value="b" checked>
+                                        喜歡和少數朋友們一起聊天
+                                    </label>
+                                </div>                                                                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center table-danger">04</th>
+                            <td class="table-danger">哪件事我認為更重要？</td>
+                            <td class="table-danger">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="04" id="" value="a" checked>
+                                        不考慮未來的話就不會有進步
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="04" id="" value="b" checked>
+                                        沒有現在就意味著沒有未來
+                                    </label>
+                                </div>                                                                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center">05</th>
+                            <td>工作時的我是？</td>
+                            <td>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="05" id="" value="a" checked>
+                                        更偏向採取自己的方式
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="05" id="" value="b" checked>
+                                        更偏向跟隨別人的腳步
+                                    </label>
+                                </div>                                                                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center table-danger">06</th>
+                            <td class="table-danger">周圍的人認為我是？</td>
+                            <td class="table-danger">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="06" id="" value="a" checked>
+                                        經常說我很有耐心和恆心
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="06" id="" value="b" checked>
+                                        經常說我很有自己的獨創思維
+                                    </label>
+                                </div>                                                                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center">07</th>
+                            <td>遇到必須拒絕的情況時我會？</td>
+                            <td>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="07" id="" value="a" checked>
+                                        深思熟慮後往往也會順從
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="07" id="" value="b" checked>
+                                        直接了當的拒絕
+                                    </label>
+                                </div>                                                                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center table-danger">08</th>
+                            <td class="table-danger">生氣的時候我會？</td>
+                            <td class="table-danger">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="08" id="" value="a" checked>
+                                        想說的話很多，但因為太生氣往往眼淚先流出來
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="08" id="" value="b" checked>
+                                        說得很有道理，同時也很計較
+                                    </label>
+                                </div>                                                                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center">09</th>
+                            <td>朋友向我訴說煩惱，我卻覺得他是錯的，我會？</td>
+                            <td>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="09" id="" value="a" checked>
+                                        直接了當的說擔心朋友會傷心，所以拐著彎子說
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="09" id="" value="b" checked>
+                                        告訴他錯的原因
+                                    </label>
+                                </div>                                                                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center table-danger">10</th>
+                            <td class="table-danger">做準備工作的時候我會？</td>
+                            <td class="table-danger">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="10" id="" value="a" checked>
+                                        總想著「明天再說」卻經常忘記
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="10" id="" value="b" checked>
+                                        提前一天做好準備
+                                    </label>
+                                </div>                                                                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center">11</th>
+                            <td>結束了一天的日程準備回家讀書，結果朋友突然叫我出去玩，我會？</td>
+                            <td>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="11" id="" value="a" checked>
+                                        OK！果然人生不會按計畫走，玩起！
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="11" id="" value="b" checked>
+                                        不在我預想的範圍裡，很糾結
+                                    </label>
+                                </div>                                                                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center table-danger">12</th>
+                            <td class="table-danger">總體上我是？</td>
+                            <td class="table-danger">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="12" id="" value="a" checked>
+                                        偏向按計劃進行
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="12" id="" value="b" checked>
+                                        想起什麼就做什麼，偏向靈活處理
+                                    </label>
+                                </div>                                                                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="lead text-center">
+                <button type="button" onclick="location.href='surprise.html'" class="btn btn-primary">提交</button>
+            </p>
+        </form>
+    </div>
+    <!-- Back to Top -->
+    <a class="gototop" onclick="GoTop()">
+        <font color="white">👆</font>
+    </a>
+    <script>
+        function GoTop() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 500);
+        }
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</body>
+
+</html>
